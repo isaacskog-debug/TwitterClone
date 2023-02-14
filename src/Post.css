@@ -1,0 +1,46 @@
+/* flyttar upp gifen */
+.post{
+display: flex;
+align-items: flex-start;
+border-bottom: 1px solid var(--twitter-background);
+padding-bottom: 10px;
+
+}
+.post__body{
+    flex: 1;
+    padding: 10px;
+}
+/* flyttar ner gifen från texten */
+.post__headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+/* flyttar upp isaacSkogen lite högerup */
+.post__headerText >h3 {
+    font-size: 15px;
+    margin-bottom:5px ;
+}
+/* Gifen blir rundare */
+.post__body > img{
+    border-radius: 20px;
+}
+/* Fixar mellanrum för iconernas text, repeat, like och ladda  */
+.post__footer{
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+}
+/* Ge en blå bock */
+.post__badge {
+    font-size: 14px !important;
+    color: var(--twitter-color);
+}
+.post__headerSpecial{
+    font-weight:600;
+    font-size: 12px;
+    color:gray;
+}
+/* sänker vi avataren en lite grann */
+.post__avatar{
+    padding: 20px;
+}

@@ -1,0 +1,28 @@
+/* Moive the bar på side */
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* Ändras färgen när musen flyttar över texten */
+.sidebarOption:hover{
+    background-color:#e8f5fe ;
+    border-radius: 30px;
+    /* enkelt kan vi använda oss av variabel */
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+/*Add a class to change the size of bar*/
+.sidebarOption > .MuiSvgIcon-root{
+    padding:20px;
+}
+/* Styaling of text */
+.sidebarOption>h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+/* Funktion-> när vi är aktiva ->Homes färg ändras till blå */
+.sidebarOption--active{
+    color: var(--twitter-color);
+}
